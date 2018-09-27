@@ -87,8 +87,8 @@ def bmu_nbrhood(bmu,r):
 
 def train():
     epochs=1500
-    lr=0.1
-    r=shapeh/2
+    lr=0.07 #Learning rate
+    r=shapeh/2 #Initial neighborhood radius
     time_const = epochs / np.log(r)
     start=time.time()
     for iteration in range(epochs):
